@@ -1,0 +1,84 @@
+
+"1.) ask user for a 3 digit number, check if it is a palindrome"
+num = int(input("Please enter a 3 digit number: "))
+
+#"Using // allows us to floor division and extract only the first digit"
+1st_num = num // 100
+
+#"Using %, gives the remainder after division and by using 10 we are extracting the last digit"
+3rd_num = num % 10
+
+"Use if to check if the first and last digit are the same, if yes, then it is palindrome
+if 1st_num == 3rd_num:
+  print("Palindrome")
+else:
+  print("Not Palindrome")
+
+
+"2.) Write a program which can add up the numbers in the series, 1/2 + 1/4 + 1/8 + 1/16 + 1/32 for 1000 iterations"
+"Create Variable"
+Denominator = 2
+"Create a variable to track the addition"
+Sum = 0
+
+"Create a loop to sum the total for all the iterations"
+for i in range(1, 1001):
+  Sum += 1/Denominator
+  Denominator *= 2
+Print("The Sum is:", Sum)
+
+
+
+
+
+
+
+
+
+"3.) Write a program which determines whether a child can sit in the front seat of a car based on criteria
+"Create variables to prompt user for data"
+Age = int(input("Please enter the childs age: ")
+Weight = int(input("Please enter the childs weight: ")
+
+"Use an if statement followed with multiple elifs to see if the child will be able to sit in the front seat."
+if Age >= 12:
+  print("Your child may sit in the front seat.")
+elif Age == 11 and Weight >=90:
+  print("Your child may sit in the front seat.")
+elif Age <= 11 and Weight >= 100:
+  print("Your child may sit in the front seat.")
+
+"Create Boolean variables equal to the select criteria"
+Rule_1 = Age >=12
+Rule_2 = Age == 11 and Weight >= 90
+Rule_3 = Age <0 11 and Weight >= 100
+
+"Use the Boolean variables to print a message to the user if their child can sit in the front seat or not"
+if Rule_1 or Rule_2 or Rule_3
+  print("Your Child Can Sit in the Front Seat!")
+else:
+  print("Your Child Can Not Sit in the Front Seat.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
